@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  StudentPage.swift
 //  FlexSchedule
 //
 //  Created by Philip Ng Pack on 7/10/20.
@@ -8,14 +8,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StudentPage: View {
+    
+
+    
     var body: some View {
-        Text("Hello, World!")
+        Text("hi")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+
+
+struct StudentPage_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StudentPage()
     }
 }
+
