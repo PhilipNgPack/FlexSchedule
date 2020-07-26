@@ -10,10 +10,10 @@ import SwiftUI
 
 struct StudentPage: View {
     
-
+    
     
     var body: some View {
-        Text("hi")
+        Text("Hi")
     }
 }
 
@@ -24,4 +24,3 @@ struct StudentPage_Previews: PreviewProvider {
         StudentPage()
     }
 }
-
