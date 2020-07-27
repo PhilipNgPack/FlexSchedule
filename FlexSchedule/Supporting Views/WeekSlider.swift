@@ -31,42 +31,48 @@ struct WeekSlider: View {
     }
     
     /**
-     * This method takes in a date and numDays to it.
-     * usage: addDay(Monday, 1) -> Tuesday
-     *
-     * - parameter date: date you want to.
-     * - parameter numDays: number of days.
+     
+     * - parameter date: the beginning date that will have time added or subtracted from it
+     * - parameter numDays: the number of days added onto date
+     * - returns: A new date that is numDays greater or fewer than the startDate
      */
     func addDay(date: Date, numDays: Int) -> Date {
         return date.addingTimeInterval(86400 * Double(numDays))
     }
-
-    /**
-     - parameter addDays: the number of seconds to add onto the startDate (86400 seconds in one day * addDays)
-     - returns: A new date that is addSeconds greater than the startDate
-     */
-    func displayDay(_ dayIndex: Int) -> Text {
-        let newDate = addDay(date: self.startDate, numDays: dayIndex)
-        return Text("\(newDate, formatter: Self.weekFormat)")
+    
+//    /**
+//     - parameter addDays: the number of seconds to add onto the startDate (86400 seconds in one day * addDays)
+//     - returns: A new date that is addSeconds greater than the startDate
+//     */
+//    func displayDay(_ dayIndex: Int) -> Text {
+//        let newDate = addDay(date: self.startDate, numDays: dayIndex)
+//        return Text("\(newDate, formatter: Self.weekFormat)")
+//    }
+    
+    func displayVStack() -> some View {
+        
+        return ForEach(0..<weekdays.count) { weekday in
+            VStack {
+                ZStack {
+                    // Change rectangle to an image
+                    RoundedRectangle(cornerRadius: 9, style: .continuous)
+                        .stroke(Color.blue)
+                        .frame(width: 68.5, height: 68.5)
+                    
+                    Text("\(self.addDay(date: self.startDate, numDays: weekday), formatter: Self.weekFormat)")
+                    Text(self.weekdays[weekday])
+                    .padding(.top, 40)
+                }
+            }
+            
+        }
     }
     
     var body: some View {
-            HStack{
-                ForEach(0..<weekdays.count) { weekday in
-                    VStack {
-                        ZStack {
-                            // Change rectangle to an image
-                            RoundedRectangle(cornerRadius: 9, style: .continuous)
-                                .stroke(Color.blue)
-                                .frame(width: 68.5, height: 68.5)
-                            self.displayDay(weekday)
-                                .padding(.top, 30)
-                            Text(self.weekdays[weekday])
-                        }
-                    }
-                    
-                }
-            }.gesture(DragGesture().onEnded { value in
+        
+        HStack{
+            displayVStack()
+        }.gesture(DragGesture().onEnded { value in
             let direction = self.detectSwipeDirection(value: value)
             if direction == .left {
                 self.startDate = self.addDay(date: self.startDate, numDays: -7)
