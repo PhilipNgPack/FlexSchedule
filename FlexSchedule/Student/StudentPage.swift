@@ -10,10 +10,11 @@ import SwiftUI
 
 struct StudentPage: View {
     
-    
-    
     var body: some View {
-        Text("Hi")
+        
+        VStack{
+            WeekSlider()
+        }
     }
 }
 
