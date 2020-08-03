@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A28A78624D4B21800481E19 /* UserStartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28A78524D4B21800481E19 /* UserStartPage.swift */; };
 		4A6D862024B8E0FF00336617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D861F24B8E0FF00336617 /* AppDelegate.swift */; };
 		4A6D862224B8E0FF00336617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D862124B8E0FF00336617 /* SceneDelegate.swift */; };
 		4A6D862524B8E0FF00336617 /* FlexSchedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D862324B8E0FF00336617 /* FlexSchedule.xcdatamodeld */; };
@@ -16,8 +17,9 @@
 		4A6D862F24B8E10300336617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D862D24B8E10300336617 /* LaunchScreen.storyboard */; };
 		4A6D863A24B8E10400336617 /* FlexScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D863924B8E10400336617 /* FlexScheduleTests.swift */; };
 		4A6D864524B8E10400336617 /* FlexScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D864424B8E10400336617 /* FlexScheduleUITests.swift */; };
-		4A821FB424BFE73A000DCB6B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A821FB324BFE73A000DCB6B /* BannerView.swift */; };
+		4A821FB424BFE73A000DCB6B /* WelcomeBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A821FB324BFE73A000DCB6B /* WelcomeBanner.swift */; };
 		4A8E370E24C0CF0D008D33EB /* WeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E370D24C0CF0D008D33EB /* WeekSlider.swift */; };
+		4AC379C624CF7BF70031F332 /* UserBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC379C524CF7BF70031F332 /* UserBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A28A78524D4B21800481E19 /* UserStartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStartPage.swift; sourceTree = "<group>"; };
 		4A6D861C24B8E0FF00336617 /* FlexSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6D861F24B8E0FF00336617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A6D862124B8E0FF00336617 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,8 +56,9 @@
 		4A6D864024B8E10400336617 /* FlexScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6D864424B8E10400336617 /* FlexScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexScheduleUITests.swift; sourceTree = "<group>"; };
 		4A6D864624B8E10400336617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A821FB324BFE73A000DCB6B /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		4A821FB324BFE73A000DCB6B /* WelcomeBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBanner.swift; sourceTree = "<group>"; };
 		4A8E370D24C0CF0D008D33EB /* WeekSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSlider.swift; sourceTree = "<group>"; };
+		4AC379C524CF7BF70031F332 /* UserBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,7 @@
 				4A6D861F24B8E0FF00336617 /* AppDelegate.swift */,
 				4A6D862124B8E0FF00336617 /* SceneDelegate.swift */,
 				4A8E370C24C0CB8A008D33EB /* Supporting Views */,
-				4A821FB224BFE6B5000DCB6B /* Teacher */,
-				4A821FB124BFE6A3000DCB6B /* Student */,
+				4A821FB124BFE6A3000DCB6B /* User */,
 				4A6D862D24B8E10300336617 /* LaunchScreen.storyboard */,
 				4A6D863024B8E10300336617 /* Info.plist */,
 				4A6D862324B8E0FF00336617 /* FlexSchedule.xcdatamodeld */,
@@ -145,25 +148,20 @@
 			path = FlexScheduleUITests;
 			sourceTree = "<group>";
 		};
-		4A821FB124BFE6A3000DCB6B /* Student */ = {
+		4A821FB124BFE6A3000DCB6B /* User */ = {
 			isa = PBXGroup;
 			children = (
+				4A28A78524D4B21800481E19 /* UserStartPage.swift */,
 				4A6D862624B8E0FF00336617 /* StudentPage.swift */,
 			);
-			path = Student;
-			sourceTree = "<group>";
-		};
-		4A821FB224BFE6B5000DCB6B /* Teacher */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Teacher;
+			path = User;
 			sourceTree = "<group>";
 		};
 		4A8E370C24C0CB8A008D33EB /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
-				4A821FB324BFE73A000DCB6B /* BannerView.swift */,
+				4A821FB324BFE73A000DCB6B /* WelcomeBanner.swift */,
+				4AC379C524CF7BF70031F332 /* UserBubble.swift */,
 				4A8E370D24C0CF0D008D33EB /* WeekSlider.swift */,
 			);
 			path = "Supporting Views";
@@ -300,8 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A28A78624D4B21800481E19 /* UserStartPage.swift in Sources */,
 				4A8E370E24C0CF0D008D33EB /* WeekSlider.swift in Sources */,
-				4A821FB424BFE73A000DCB6B /* BannerView.swift in Sources */,
+				4A821FB424BFE73A000DCB6B /* WelcomeBanner.swift in Sources */,
+				4AC379C624CF7BF70031F332 /* UserBubble.swift in Sources */,
 				4A6D862024B8E0FF00336617 /* AppDelegate.swift in Sources */,
 				4A6D862224B8E0FF00336617 /* SceneDelegate.swift in Sources */,
 				4A6D862724B8E0FF00336617 /* StudentPage.swift in Sources */,

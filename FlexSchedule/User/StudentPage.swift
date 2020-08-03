@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct StudentPage: View {
+
     
     var body: some View {
-        
         VStack{
+            WelcomeBanner(studName: "Angus", schoolName: "MILTON HIGH SCHOOL")
             WeekSlider()
         }
     }
+    
+    
 }
 
 
