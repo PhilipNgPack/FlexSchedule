@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 // Welcome banner for TeacherPage and StudentPage
 struct WelcomeBanner: View {
     @State var studName: String
