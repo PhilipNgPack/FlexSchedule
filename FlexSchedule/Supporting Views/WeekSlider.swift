@@ -14,7 +14,7 @@ struct WeekSlider: View {
     @State var startDate: Date = Date().next(.monday, direction: .backward)
     static let weekFormat: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM dd"
+        formatter.dateFormat = "MMM dd"
         return formatter
     }()
     
@@ -31,7 +31,6 @@ struct WeekSlider: View {
     }
     
     /**
-     
      * - parameter date: the beginning date that will have time added or subtracted from it
      * - parameter numDays: the number of days added onto date
      * - returns: A new date that is numDays greater or fewer than the startDate
@@ -40,17 +39,7 @@ struct WeekSlider: View {
         return date.addingTimeInterval(86400 * Double(numDays))
     }
     
-//    /**
-//     - parameter addDays: the number of seconds to add onto the startDate (86400 seconds in one day * addDays)
-//     - returns: A new date that is addSeconds greater than the startDate
-//     */
-//    func displayDay(_ dayIndex: Int) -> Text {
-//        let newDate = addDay(date: self.startDate, numDays: dayIndex)
-//        return Text("\(newDate, formatter: Self.weekFormat)")
-//    }
-    
     func displayVStack() -> some View {
-        
         return ForEach(0..<weekdays.count) { weekday in
             VStack {
                 ZStack {
@@ -58,10 +47,12 @@ struct WeekSlider: View {
                     RoundedRectangle(cornerRadius: 9, style: .continuous)
                         .stroke(Color.blue)
                         .frame(width: 68.5, height: 68.5)
-                    
                     Text("\(self.addDay(date: self.startDate, numDays: weekday), formatter: Self.weekFormat)")
+                        .font(.system(size: 15))
+                        .padding(.bottom, 45)
                     Text(self.weekdays[weekday])
-                    .padding(.top, 40)
+                        .font(.system(size: 15))
+                        .padding(.top, 45)
                 }
             }
             

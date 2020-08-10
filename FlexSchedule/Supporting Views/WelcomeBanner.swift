@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-
 // Welcome banner for TeacherPage and StudentPage
 struct WelcomeBanner: View {
+    
     @State var studName: String
     @State var schoolName: String
     
@@ -40,7 +40,7 @@ struct WelcomeBanner: View {
 
 struct WelcomeBanner_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeBanner(studName: "Angus", schoolName: "MILTON HIGH SCHOOL")
+        WelcomeBanner(studName: "Angus", schoolName: "Milton High School")
     }
 }
 

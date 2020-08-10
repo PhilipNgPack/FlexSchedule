@@ -9,11 +9,12 @@
 import SwiftUI
 
 struct StudentPage: View {
+    let userData = UserData()
 
     
     var body: some View {
         VStack{
-            WelcomeBanner(studName: "Angus", schoolName: "MILTON HIGH SCHOOL")
+            WelcomeBanner(studName: "Angus", schoolName: userData.profile.schoolName)
             WeekSlider()
         }
     }
