@@ -11,7 +11,7 @@ import SwiftUI
 // Welcome banner for TeacherPage and StudentPage
 struct WelcomeBanner: View {
     
-    @State var studName: String
+    @State var userName: String
     @State var schoolName: String
     
     var body: some View {
@@ -24,14 +24,14 @@ struct WelcomeBanner: View {
             HStack(spacing: 40) {
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Welcome, \(studName)!")
+                    Text("Welcome, \(userName)!")
                         .font(.system(size: 20, weight: .bold, design: .default))
                         .foregroundColor(.white)
                     Text("\(schoolName)")
                         .foregroundColor(.white)
                 }
                 
-                UserBubble(profilePic: Image("Angus"))
+                CircleImage(pic: Image("Angus"))
             }
         }
         
@@ -40,7 +40,7 @@ struct WelcomeBanner: View {
 
 struct WelcomeBanner_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeBanner(studName: "Angus", schoolName: "Milton High School")
+        WelcomeBanner(userName: "Angus", schoolName: "Milton High School")
     }
 }
 

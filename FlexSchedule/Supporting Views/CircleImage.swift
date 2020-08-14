@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct UserBubble: View {
-
-    var profilePic: Image
+struct CircleImage: View {
+    
+    var pic: Image
     
     var body: some View {
-        profilePic
+            pic
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 60, height: 60)
@@ -23,8 +23,8 @@ struct UserBubble: View {
     }
 }
 
-struct UserBubble_Previews: PreviewProvider {
+struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        UserBubble(profilePic: Image("Angus"))
+        CircleImage(pic: Image("Angus"))
     }
 }

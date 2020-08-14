@@ -21,7 +21,8 @@
 		4A6D864524B8E10400336617 /* FlexScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D864424B8E10400336617 /* FlexScheduleUITests.swift */; };
 		4A821FB424BFE73A000DCB6B /* WelcomeBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A821FB324BFE73A000DCB6B /* WelcomeBanner.swift */; };
 		4A8E370E24C0CF0D008D33EB /* WeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E370D24C0CF0D008D33EB /* WeekSlider.swift */; };
-		4AC379C624CF7BF70031F332 /* UserBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC379C524CF7BF70031F332 /* UserBubble.swift */; };
+		4ABEBC7624E5AD7100C05555 /* CourseCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABEBC7524E5AD7100C05555 /* CourseCards.swift */; };
+		4AC379C624CF7BF70031F332 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC379C524CF7BF70031F332 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,8 @@
 		4A6D864624B8E10400336617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A821FB324BFE73A000DCB6B /* WelcomeBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBanner.swift; sourceTree = "<group>"; };
 		4A8E370D24C0CF0D008D33EB /* WeekSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSlider.swift; sourceTree = "<group>"; };
-		4AC379C524CF7BF70031F332 /* UserBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBubble.swift; sourceTree = "<group>"; };
+		4ABEBC7524E5AD7100C05555 /* CourseCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCards.swift; sourceTree = "<group>"; };
+		4AC379C524CF7BF70031F332 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				4A821FB324BFE73A000DCB6B /* WelcomeBanner.swift */,
-				4AC379C524CF7BF70031F332 /* UserBubble.swift */,
 				4A8E370D24C0CF0D008D33EB /* WeekSlider.swift */,
+				4AC379C524CF7BF70031F332 /* CircleImage.swift */,
+				4ABEBC7524E5AD7100C05555 /* CourseCards.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -317,7 +320,8 @@
 				4A8E370E24C0CF0D008D33EB /* WeekSlider.swift in Sources */,
 				4A821FB424BFE73A000DCB6B /* WelcomeBanner.swift in Sources */,
 				4A39210824DA1D1C001AB26B /* UserData.swift in Sources */,
-				4AC379C624CF7BF70031F332 /* UserBubble.swift in Sources */,
+				4ABEBC7624E5AD7100C05555 /* CourseCards.swift in Sources */,
+				4AC379C624CF7BF70031F332 /* CircleImage.swift in Sources */,
 				4A6D862024B8E0FF00336617 /* AppDelegate.swift in Sources */,
 				4A6D862224B8E0FF00336617 /* SceneDelegate.swift in Sources */,
 				4A6D862724B8E0FF00336617 /* StudentPage.swift in Sources */,

@@ -11,18 +11,13 @@ import SwiftUI
 struct StudentPage: View {
     let userData = UserData()
 
-    
     var body: some View {
         VStack{
-            WelcomeBanner(studName: "Angus", schoolName: userData.profile.schoolName)
+            WelcomeBanner(userName: userData.profile.userName, schoolName: userData.profile.schoolName)
             WeekSlider()
         }
     }
-    
-    
 }
-
-
 
 struct StudentPage_Previews: PreviewProvider {
     static var previews: some View {

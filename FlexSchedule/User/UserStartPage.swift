@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct UserStartPage: View {
+    let userData = UserData()
     
     @State var signUpDisplayed: Bool = false
     
@@ -24,13 +25,12 @@ struct UserStartPage: View {
     
     var body: some View {
         
+        
         VStack {
-            Text("MILTON HIGH SCHOOL")
-                .font(.title)
-            Image("School")
-                .resizable()
-                .frame(width: UIScreen.main.bounds.width, height: 300)
             
+            CircleImage(pic: Image("School"))
+                .padding(.bottom, 300)
+    
             VStack(alignment: .leading) {
             enterEmailField(email: self.$email)
             
