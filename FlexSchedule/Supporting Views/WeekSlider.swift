@@ -84,7 +84,9 @@ struct WeekSlider_Previews: PreviewProvider {
 
 extension Date {
     /**
-     - parameter weekday:
+     - parameter weekday: the day of the week that we are searching for
+     - parameter direction: going forwards in time or backwards in time from the date that weekday
+     - returns: a Date that matches both parameters
      */
     public func next(_ weekday: Weekday, direction: Calendar.SearchDirection = .forward) -> Date
     {

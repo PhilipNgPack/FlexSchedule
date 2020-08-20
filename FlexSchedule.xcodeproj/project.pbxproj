@@ -178,8 +178,8 @@
 			children = (
 				4A821FB324BFE73A000DCB6B /* WelcomeBanner.swift */,
 				4A8E370D24C0CF0D008D33EB /* WeekSlider.swift */,
-				4AC379C524CF7BF70031F332 /* CircleImage.swift */,
 				4ABEBC7524E5AD7100C05555 /* CourseCards.swift */,
+				4AC379C524CF7BF70031F332 /* CircleImage.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
